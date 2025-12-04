@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maverick Grills — Event Grilling & Custom Grills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <img src="images/logo.jpeg" alt="Maverick Grills Logo">
+      <div>
+        <h1>Maverick Grills</h1>
+        <div class="muted2">Event grilling • Custom grills • Consultation</div>
+      </div>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav id="nav-menu">
+      <a href="#bulk">Bulk Orders</a>
+      <a href="#daily">Daily</a>
+      <a href="#manufacture">Manufacture</a>
+      <a href="#reserve">Reserve</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h2>Big events. Bold grills. Flavour that moves crowds.</h2>
+        <p class="muted">Specializing in bulk event grilling — full cow, full ram, party grill setups, and consultation. Daily orders are limited to grilled fish.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('reserve').scrollIntoView({behavior:'smooth'})">Reserve Bulk Order</button>
+          <button class="btn ghost" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">View Gallery</button>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <strong>Bulk orders only</strong>
+            <div class="muted">Full cow, full ram, and 12+ plates for chicken & chips.</div>
+          </div>
+          <div class="card">
+            <strong>Advance Notice</strong>
+            <div class="muted">Bulk orders require at least <strong>4 days</strong> notice (we recommend 7 days).</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card-right">
+        <h3 class="classic">Special Meal</h3>
+        <div class="reserve">
+          <div class="thumb" style="background-image:url('./images/011.jpeg')"></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- BULK -->
+    <section id="bulk">
+      <h3 class="more">Bulk Grilling (Main Focus)</h3>
+      <p class="muted">Perfect for parties and events. We specialize in full-cow and full-ram grills, large platters, and event logistics.</p>
+      <div class="services">
+        <div class="service">
+          <strong>Full Cow Grilling</strong>
+          <p class="muted">Complete event set-up. Requires at least 4 days notice. Pricing available on request.</p>
+        </div>
+        <div class="service">
+          <strong>Full Ram Grilling</strong>
+          <p class="muted">Ideal for medium events. Requires advance notice.</p>
+        </div>
+        <div class="service">
+          <strong>Chicken & Chips (Bulk only)</strong>
+          <p class="muted">Available only for orders of <strong>12 plates and above</strong>. Minimum 4 days notice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAILY -->
+    <section id="daily">
+      <h3>Daily Orders</h3>
+      <p class="muted">We accept limited daily orders — currently only <strong>grilled fish</strong> for same-day pickup.</p>
+      <div class="muted note">Tip: For bulk events, please use the reservation form with the event date (minimum 4 days ahead).</div>
+    </section>
+
+    <!-- MANUFACTURE -->
+    <section id="manufacture">
+      <h3>Grill Manufacturing</h3>
+      <p class="muted">We design and build custom grills for events and businesses. Send a request with your specs and we'll follow up with a quote.</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+  <div class="about-container">
+    
+    <div class="about-text">
+      <h2>About Maverick Grills</h2>
+      <p>
+        We specialize in premium event grilling — from full cow and full ram 
+        preparations to custom grill manufacturing and professional consultations.
+        With years of experience and multiple successful event collaborations, we
+        deliver top-tier service for clients who want quality. we are popular for
+        "lunch" "Dinner" "Solo dining". Great for families, friends and Group.
+        We also accept reservation, and our payment method are Credit cards/Debitcards, 
+        And we also offer you the best food and drink's in town. with good quick bite 
+        Snacks for kids we also have free parking lot, safe and good for your vehicles.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="images/002.jpeg" alt="About Maverick Grills">
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h3 class="mute">Gallery</h3>
+      <p class="muted">Photos from past events and grills we build.</p>
+      <div class="gallery">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1643886027883-1a23fe41ee2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyaWxsZCUyMGNoaWNrZW58ZW58MHx8MHx8fDA%3D')"></div>
+        <div class="thumb" style="background-image:url('images/012.jpeg')"></div>
+        <div class="thumb" style="background-image:url('images/007.jpeg')"></div>
+        <div class="thumb" style="background-image:url('images/013.jpeg')"></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h3 class="mute">Our Chef</h3>
+      <p class="muted">Meet our chef, the heart and soul of Maverick Grills! With years of experience and a passion for flavors, he brings every dish to life, serving the best grilled meals in town that will leave you coming back for more. “Our chef is the secret behind Maverick Grills’ mouth-watering dishes — turning every meal into a celebration of flavor!”</p>
+      <div class="gallery">
+        <div class="thumb" style="background-image:url('images/cheif.jpeg')"></div>
+        <div class="thumb" style="background-image:url('images/003.jpeg')"></div>
+        <div class="thumb" style="background-image:url('images/005.jpeg')"></div>
+        <div class="thumb" style="background-image:url('images/006.jpeg')"></div>
+      </div>
+    </section>
+
+    <!-- HTML -->
+    <div class="menu-button-container">
+      <a href="menu.html" class="menu-button">🥂 View Our Full Menu</a>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <p class="muted">Phone / WhatsApp: <strong>+234 8064544333</strong><br> Email: <strong>Contactmaverickgrills@gmail.com.com</strong></p>
+      <br>
+      <h3>📍 Our location</h3>
+      <p>No 9, Badore Rd,</p>
+      <p>Lagos Ajah, beside Enyo Filling Station,</p>
+      <p>Lagos 100269,</p>.
+    </section>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/2348064544333" class="whatsapp-float" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+  <div>© Maverick Grills</div>
+    <div class="muted"><a class="call-btn" href="tel:+2348064544333">📞 Call Now</a>
+  </div>
+  </footer>
+
+
+</body>
+</html>

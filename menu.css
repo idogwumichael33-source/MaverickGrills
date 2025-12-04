@@ -1,0 +1,335 @@
+    
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ede7e7;
+  color: #201d1d;
+}
+
+.menu-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ff6b1a;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 18px;
+  color: #191818;
+  margin-bottom: 40px;
+}
+
+.menu-section {
+  margin-bottom: 40px;
+}
+
+.menu-section h2 {
+  font-size: 24px;
+  color: #ff6b1a;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.05);
+  font-size: 16px;
+}
+
+.menu-section span {
+  color: #ff6b1a;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #272626;
+  margin-top: 60px;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+/* For all buttons */
+.btn:hover,
+.menu-button:hover {
+  animation: shake 0.5s;
+}
+
+.menu-button {
+  background-color: #ff6b1a;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;   /* <-- important for shake */
+}
+
+/* CSS */
+.menu-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu-button:hover {
+  background-color: #f44336;
+}
+.menu-section h2 {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.menu-section li {
+  border-bottom: 1px dashed rgba(0,0,0,0.2);
+}
+
+
+.reserve-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+/* RESERVE */
+.reserve {
+  margin-top: 50px;  /* adds clean spacing */
+}
+
+.reserve-grid {
+  gap: 30px;
+}
+
+form .row{ display:flex; gap:8px; }
+input, select, textarea{ width:100%; padding:10px; border-radius:8px; background:transparent; color:#151515; }
+input, select, textarea {
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+textarea{ min-height:100px; resize:vertical; }
+.note{ background:var(--glass); padding:10px; border-radius:10px; color:var(--muted); font-size:13px; }
+
+
+/* POLICY */
+.policy{ background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:16px; border-radius:12px; color:var(--muted); font-size:14px; }
+.policy {
+  background: rgba(0,0,0,0.05);
+  color: #333;
+}
+
+input, select, textarea {
+  margin-bottom: 15px;
+}
+
+
+.reserve-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 50px !important;   /* Force spacing */
+  margin-top: 20px;       /* Extra spacing */
+}
+
+section {
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+
+#reserve h3 {
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ff6b1a;
+  margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.btn {
+  background: #ff6b1a;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Clear button */
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #ff6b1a;
+  color: #ff6b1a;
+}
+
+.btn.ghost:hover {
+  background: #ff6b1a;
+  color: #111;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .reserve-grid {
+    grid-template-columns: 1fr; /* stack form + policy */
+    gap: 30px;
+  }
+
+  form .row {
+    flex-direction: column; /* name + phone stack */
+  }
+
+  .menu-container {
+    padding: 20px 15px;
+  }
+
+  #reserve h3 {
+    font-size: 24px;
+  }
+}
+
+select {
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+form .row {
+  display: flex;
+  gap: 20px; /* increases spacing between fields */
+  margin-bottom: 12px; /* adds spacing after each row */
+}
+
+input, select, textarea {
+  width: 100%;  /* already done */
+  box-sizing: border-box; /* ensure padding/border doesn’t overflow */
+}
+
+
+
+/* ---------------------- Menu Section ----------------------- */
+ .menu img {
+   width: 100%; /* takes full width of its container */ 
+   max-width: 400px; /* limits the maximum size */ 
+   height: 200px; /* keeps the height consistent */ 
+   object-fit: cover; border-radius: 10px; 
+  } 
+  .menu { 
+    background: #fff; 
+  } 
+  .menu h2 {
+     text-align: center; 
+     font-size: 32px; 
+     margin-bottom: 50px; 
+     font-family: 'sans-serif poppings'; 
+    } 
+  .menu-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+      gap: 24px; 
+      max-width: var(--max-width); 
+      margin: 0 auto; 
+  } 
+    
+  .menu-item {
+     background: var(--card); 
+     border-radius: var(--radius); 
+     overflow: hidden; 
+     box-shadow: 0 6px 18px rgba(0,0,0,0.05); 
+     transition: transform 0.3s; 
+  } 
+  .menu-item:hover {
+    transform: translateY(-6px); 
+  } 
+
+        
+ .menu-info {
+   padding: 12px;
+   text-align: center;
+   } 
+   
+  .menu-info h4 { 
+    font-size: 18px; 
+    margin-bottom: 6px;
+   } 
+   .menu-info .price { 
+    font-weight: 700; 
+    color: var(--accent); 
+    margin-bottom: 6px; 
+  } 
+  .menu-info a { 
+    display: inline-block; 
+    padding: 6px 12px; 
+    background: #ff6b1a; 
+    color: #fff; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    margin-top: 6px; 
+  } 
+  /* ---------------------- CSS Modals for View ----------------------- */ 
+  .css-modal { 
+    position: fixed; 
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.6); 
+    display: none; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999; 
+  } 
+  .css-modal:target { 
+    display: flex; 
+  } 
+  
+  .css-modal-content { 
+    background: var(--card); 
+    padding: 20px; border-radius: var(--radius); 
+    max-width: 500px;
+    width: 90%;
+    text-align: center; 
+  } 
+  
+  .close-modal { 
+    display: inline-block; 
+    margin-bottom: 12px; 
+    font-size: 20px; 
+    font-weight: 700; 
+    color: var(--accent); 
+  }
+
+ .css-modal-content img {
+   width: 300px;     /* specific width */
+   height: 250px;    /* specific height */
+   object-fit: cover;
+   margin-bottom: 12px;
+   border-radius: var(--radius);
+ }
