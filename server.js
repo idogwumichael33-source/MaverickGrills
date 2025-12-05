@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Serve static files (HTML, CSS, JS, images)
+// Serve static files
 app.use(express.static(path.join(__dirname)));
 
 const transporter = nodemailer.createTransport({
@@ -49,8 +49,8 @@ app.post("/reserve", async (req, res) => {
   }
 });
 
-// FIX: express 5 requires /* instead of *
-app.get("/*", (req, res) => {
+// EXPRESS 5 FIX: Use regex for catch-all route
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
