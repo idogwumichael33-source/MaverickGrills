@@ -5,15 +5,12 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
-
-// Enable CORS and parse JSON
 app.use(cors());
 app.use(express.json());
 
 // Serve static files (HTML, CSS, JS, images)
-app.use(express.static(path.join(__dirname, "/")));
+app.use(express.static(path.join(__dirname)));
 
-// Nodemailer setup
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -22,7 +19,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Reservation POST route
 app.post("/reserve", async (req, res) => {
   const data = req.body;
 
@@ -53,13 +49,11 @@ app.post("/reserve", async (req, res) => {
   }
 });
 
-// Fallback: send index.html for any unknown route
-app.get("*", (req, res) => {
+// FIX: express 5 requires /* instead of *
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Start server
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(process.env.PORT || 4000, () => {
+  console.log("Server running on port", process.env.PORT || 4000);
 });
