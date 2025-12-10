@@ -422,3 +422,55 @@ nav {
     text-align: left;
   }
 }
+
+
+.manufacturing {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.manufacturing h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.manufacturing p {
+  font-size: 1.18rem;
+  line-height: 1.85;
+  max-width: 850px;
+  margin: 0 auto 25px auto;
+  color: #444;
+}
+
+/* === RESPONSIVE DESIGN === */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .manufacturing h2 {
+    font-size: 2rem;
+  }
+
+  .manufacturing p {
+    font-size: 1.05rem;
+    padding: 0 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .manufacturing {
+    padding: 55px 15px;
+  }
+
+  .manufacturing h2 {
+    font-size: 1.7rem;
+  }
+
+  .manufacturing p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+}
