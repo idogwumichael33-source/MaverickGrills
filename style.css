@@ -474,3 +474,29 @@ nav {
     margin-bottom: 18px;
   }
 }
+
+
+  .video-section {
+  display: flex;
+  flex-wrap: wrap;        /* Makes it responsive on mobile */
+  gap: 20px;              /* Space between videos */
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-box {
+  width: 45%; 
+  height: 500px;            /* Two videos side-by-side on desktop */
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Mobile responsiveness */
+@media(max-width: 768px){
+  .video-box {
+    width: 100%;          /* Stack videos on mobile */
+  }
+}
+
